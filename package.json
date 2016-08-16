@@ -1,0 +1,20 @@
+{
+  "name": "thumbnails",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "flat-file-db": "^1.0.0",
+    "fs-promise": "^0.5.0",
+    "multer": "^1.2.0",
+    "pdf-image": "^1.1.0",
+    "sharp": "^0.15.1"
+  }
+}
