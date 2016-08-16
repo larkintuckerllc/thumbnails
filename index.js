@@ -17,7 +17,10 @@ db.on('open', () => {
   app.use(urlencoded({ extended: true }));
   app.use(allowCrossDomain);
   app.use(noCache);
-  app.post('/api/upload/',
+  app.get('/api/pdfs', (req, res) => {
+      res.send(globals.pdfs);
+  });
+  app.post('/api/pdfs/',
     multer({ dest: tempDirPath }).single('file'),
     upload);
   app.listen(3000, () => console.log('Example app listening on port 3000!'));
